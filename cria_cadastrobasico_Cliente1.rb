@@ -7,7 +7,7 @@ require 'cucumber'
 
 Selenium::WebDriver::Chrome.driver_path="C:/chromedriver.exe"
 browser = Selenium::WebDriver.for :chrome
-browser.get("https://www.bompracredito.com.br/v2/cadastrobasico?id=87e71646-a1f4-496a-b44f-a9ca0161da7b")
+browser.get("https://demo.bompracredito.com.br/v2/cadastrobasico?id=5b6b2160-ce26-4449-ba2a-a9cf00e316d9")
 
 cpf = browser.find_element(id: "borrower.cpf")
 cpf.send_keys("385.065.498-25")
