@@ -4,7 +4,7 @@ require 'cucumber'
 
 Selenium::WebDriver::Chrome.driver_path="C:/chromedriver.exe"
 browser = Selenium::WebDriver.for :chrome
-browser.get("https://www.bompracredito.com.br/emprestimo-pessoal")
+browser.get("https://demo.bompracredito.com.br/emprestimo-pessoal/")
 
 valoremprestimo = browser.find_element(id: "btnTwoThousand").click
 sleep 2
